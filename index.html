@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O.la makeups</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="sass/lightbox.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" media='screen and (min-width: 576px)' href="sass/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="sass/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="sass/large.css">
+    <link rel="stylesheet" href="sass/animate.css">
+    <script src="https://kit.fontawesome.com/ecd344741b.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <a class="navbar-brand" href="#"><img id="logo" src="./img/ola_makeups_logo.jpg"> o.la<span
+                style="color:magenta">makeups</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#aboutus">m.klasyczny</a>
+                <a class="nav-link" href="#aboutus-hero">m.permanentny</a>
+                <a class="nav-link" href="#prices">cennik</a>
+                <a class="nav-link" href="#contact">kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="hero-img">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1 class="animate__animated animate__backInDown">O.LA classic<span
+                        class="animate__animated animate__backInDown animate__delay-2s" style="color:magenta;"> &
+                    </span>permanent
+                    makeups</h1>
+                <p class="animate__animated animate__backInLeft animate__delay-1s">Profesjonalna usługa makijażu
+                    permanentnego brwi i ust
+
+                </p>
+                <a href="#aboutus"
+                    class="btn btn-outline-light animate__animated animate__fadeInUp animate__delay-2s">oferta</a>
+            </div>
+            <a href="#aboutus"><i
+                    class="fas fa-angle-down animate__animated animate__bounce animate__delay-3s animate__infinite"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutus" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="wrapper">
+                    <h2>makijaż klasyczny</h2>
+                    <div class="underline"></div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"
+                            data-animation='animate__animated animate__fadeInLeft' data-delay='.3s'>
+                            <a href="./img/makijaz_okazjonalny.jpg" data-lightbox="classic_mkup"><img
+                                    src="./img/makijaz_okazjonalny.jpg" class="card-img-top aboutus-img" alt=""></a>
+                            <a href="./img/gallery-makeup1.jpg" data-lightbox="classic_mkup"></a>
+                            <a href="./img/gallery-makeup2.jpg" data-lightbox="classic_mkup"></a>
+                            <a href="./img/gallery-makeup3.jpg" data-lightbox="classic_mkup"></a>
+                            <a href="./img/gallery-makeup4.jpg" data-lightbox="classic_mkup"></a>
+                            <h3>makijaż okazjonalny</h3>
+                            <p>dzienny/biznesowy</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"
+                            data-animation='animate__animated animate__fadeInLeft' data-delay='1s'>
+                            <a href="./img/brow_henna.jpg" data-lightbox="brow_henna"><img src="./img/brow_henna.jpg"
+                                    class="card-img-top aboutus-img" alt="..."></a>
+                            <a href="./img/gallery-brow-henna1.jpg" data-lightbox="brow_henna"></a>
+                            <a href="./img/gallery-brow-henna2.jpg" data-lightbox="brow_henna"></a>
+                            <a href="./img/gallery-brow-henna3.jpg" data-lightbox="brow_henna"></a>
+                            <h3>brow henna</h3>
+                            <p> profesjonalna stylizacja brwi!</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility"
+                            data-animation='animate__animated animate__fadeInLeft' data-delay='1.5s'>
+                            <a href="./img/rzesy.jpg" data-lightbox="eyelashes"><img src="./img/rzesy.jpg"
+                                    class="card-img-top aboutus-img" alt=""></a>
+                            <a href="./img/gallery-eyelashes1.jpg" data-lightbox="eyelashes"></a>
+                            <a href="./img/gallery-eyelashes2.jpg" data-lightbox="eyelashes"></a>
+                            <a href="./img/gallery-eyelashes3.jpg" data-lightbox="eyelashes"></a>
+                            <a href="./img/gallery-eyelashes4.jpg" data-lightbox="eyelashes"></a>
+                            <h3>laminacja, lifting i botoks rzęs.</h3>
+                            <p>najwyższe standardy!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutus-hero">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="about-shadow"></div>
+                <div class="wrapper">
+                    <h2 class=" os-animation visibility" data-animation="animate__animated animate__fadeIn">Makijaż
+                        permanentny</h2>
+                    <div class="underline os-animation visibility" data-animation="animate__animated animate__fadeIn"
+                        data-delay=".5s">
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6 text-center aboutus-item os-animation visibility"
+                            data-animation="animate__animated animate__fadeIn" data-delay=".2s">
+                            <a href="./img/permanentny_brwi.jpg" data-lightbox="brows-permanent"><img
+                                    src="./img/permanentny_brwi.jpg" class="card-img-top aboutus-img" alt="..."></a>
+                            <a href="./img/gallery-brows-permanent1.jpg" data-lightbox="brows-permanent"></a>
+                            <a href="./img/gallery-brows-permanent2.jpg" data-lightbox="brows-permanent"></a>
+                            <a href="./img/gallery-brows-permanent3.jpg" data-lightbox="brows-permanent"></a>
+                            <a href="./img/gallery-brows-permanent4.jpg" data-lightbox="brows-permanent"></a>
+                            <h3>Makijaż Permanentny BRWI</h3>
+                            <p>Stały makijaż pozostanie na skórze nawet kilka lat!</p>
+                        </div>
+                        <div class=" col-md-6 text-center aboutus-item os-animation visibility"
+                            data-animation="animate__animated animate__fadeIn" data-delay=".5s">
+                            <a href="./img/permanentny_usta.jpg" data-lightbox="lips-permanent"><img
+                                    src="./img/permanentny_usta.jpg" class="card-img-top aboutus-img" alt="..."></a>
+                            <a href="./img/lips-permanent1.jpg" data-lightbox="lips-permanent"></a>
+                            <a href="./img/lips-permanent2.jpg" data-lightbox="lips-permanent"></a>
+                            <a href="./img/lips-permanent3.jpg" data-lightbox="lips-permanent"></a>
+                            <a href="./img/lips-permanent4.jpg" data-lightbox="lips-permanent"></a>
+                            <h3>Makijaż permanentny UST</h3>
+                            <p>wyrównuje asymetrię ust,
+                                delikatnie powiększa i podkreśla ich linię.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- PRICES -->
+        <section id="prices" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <h2 class=" os-animation visibility" data-animation="animate__animated animate__fadeIn">Cennik
+                </h2>
+                <div class="underline os-animation visibility" data-animation="animate__animated animate__fadeIn"
+                    data-delay=".1s">
+                </div>
+
+                <div class="price-wrapper row text-center justify-content-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box os-animation visibility"
+                            data-animation="animate__animated animate__fadeIn" data-delay=".3s">
+                            <h3>Makijaż okazjonalny</h3>
+                            <hr>
+                            <p><span>Makijaż dzienny/biznesowy</span></p>
+                            <p><span>Makijaż okazjonalny</span></p>
+                            <p><span>Makijaż ślubny/próbny ślubny</span></p>
+                            <p><span></span></p>
+                            <p class="price"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box os-animation visibility"
+                            data-animation="animate__animated animate__fadeIn" data-delay=".5s">
+                            <h3>Brow Henna</h3>
+                            <hr>
+                            <p><span>Brow Henna to nieinwazyjny zabieg farbowania brwi z efektem
+                                    tatuażu na skórze do 14 dni
+                                </span>>oraz utrzymaniem koloru na włoskach do 6-7 tygodni.</p>
+                            <p>
+                                <span</span> </p> <p class="price">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box os-animation visibility"
+                            data-animation="animate__animated animate__fadeIn" data-delay=".7s">
+                            <h3>Laminacja,lifting rzęs</h3>
+                            <hr>
+                            <p><span>Pozwala na uniesienie, pogrubienie, przyciemnienie oraz dogłębne odżywianie
+                                    naturalnych rzęs.</span></p>
+                            <p><span>Daje bardzo naturalny efekt, ale sprawia, że spojrzenie nabiera
+                                    wyrazistości.</span></p>
+                            <p class="price"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-wrapper row text-center justify-content-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box os-animation visibility"
+                            data-animation="animate__animated animate__fadeIn" data-delay=".1s">
+                            <h3>Makijaż permanentny brwi</h3>
+                            <hr>
+                            <p>Czas trwania: <span>Czas trwania jest zróżnicowany</span></p>
+                            <p><span>Metoda pudrowa. Cena zawiera dopigmentowanie po min. miesiącu, max 2 miesiącach od
+                                    zabiegu</span></p>
+                            <p class="price">700 zł.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box os-animation visibility"
+                            data-animation="animate__animated animate__fadeIn" data-delay=".3s">
+                            <h3>Makijaż permanentny ust</h3>
+                            <hr>
+                            <p><span>Poprawia wygląd ust, podkreśla ich kolor, dzięki niemu można zapomnieć o
+                                    konieczności codziennego stosowania szminki.
+                                </span></p>
+                            <p>
+                                <span>Cena zawiera dopigmentowanie po ok miesiącu od pierwszego zabiegu.</span> </p>
+                            <p class="price">800 zł.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-fix">
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="contact-shadow"></div>
+
+                <h2>Kontakt</h2>
+                <div class="underline"></div>
+
+                <div class="wrapper row text-center contact-us">
+                    <div class="contact-item col-sm-6 col-lg-4">
+                        <h3>Adres:</h3>
+                        <p>Henryka Sienkiewicza 35</p>
+                        <p>32-020 Wieliczka</p>
+                        <p>+48 668 693 789</p>
+
+                        <div class="facebook classic-makeups">
+                            <a href="https://www.facebook.com/ola-makeups-575198522651873/?ref=page_internal"><span
+                                    class="fb-icon"><i class="fab fa-facebook "></i></span></a>
+                            <p>Makijaż klasyczny</p>
+                        </div>
+                        <div class="facebook permanent-makeups">
+                            <a href="https://www.facebook.com/OLA-permanent-makeup-2142962229359101/?ref=page_internal">
+
+                                <span class="fb-icon-permanent"> <i class="fab fa-facebook"></i></span>
+                            </a>
+                            <p>Makijaż permanentny</p>
+                        </div>
+
+                    </div>
+                    <div class="contact-item col-sm-6 col-lg-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421.91019701618444!2d20.066459687455577!3d49.98542184245762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471641615a478b45%3A0xfc5ea1aa704ad820!2sHenryka%20Sienkiewicza%2035%2C%2032-020%20Wieliczka!5e0!3m2!1spl!2spl!4v1597847383978!5m2!1spl!2spl"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2020 O.la makeups</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/jquery.waypoints.min"></script>
+
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

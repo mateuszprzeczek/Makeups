@@ -1,0 +1,323 @@
+$blue-color: #ff00d5
+
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('')
+    overflow-x: hidden
+
+
+
+.wrapper
+    max-width: 1920px
+    width: 80%
+    margin: 0 auto
+
+    h2
+        text-transform: uppercase
+        text-align: center
+
+.underline
+    margin: 0 auto 40px
+    width: 60px
+    height: 4px
+    background-color: $blue-color
+
+.scroll-fix::before
+    display: block
+    margin-top: -66px
+    height: 66px
+    content: ''
+
+.visibility
+    visibility: hidden
+
+.jumbotron
+    margin: 0
+
+// NAWIGACJA
+nav
+    text-transform: uppercase
+    transition: background-color .6s
+    
+    
+    
+    a, i
+        color: #fff
+        transition: color .3s
+
+    a:hover
+        color: $blue-color
+
+    a.nav-link.active
+        color: $blue-color
+
+    .navbar-brand
+        font-weight: bold
+     
+
+        img
+            height: 75px
+            width: 75px
+
+.shadow-bg
+    background-color: rgba(0,0,0, .8)
+    
+
+// HEADER
+
+header
+    color: white
+    overflow: hidden
+    
+    h1
+        font-size: 30px
+        padding: 10px
+        text-transform: uppercase
+
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('../img/ola_makeups_header.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        transition: .3s
+        z-index: 0
+
+    .hero-shadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, .6)
+        z-index: -10
+
+    .hero-text
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        height: 110%
+        text-align: center
+
+        p
+            padding: 10px
+            font-size: 14px
+
+    .btn-outline-light
+        text-transform: uppercase
+
+    .fa-angle-down
+        display: none
+        
+
+
+// MAIN
+#aboutus
+    i
+        margin-top: 20px
+        font-size: 30px
+
+    h3
+        font-size: 18px
+        text-transform: uppercase
+    p
+        font-size: 14px
+
+    .aboutus-img
+        height: 70% 
+        transition: .3s
+        
+    .aboutus-img:hover
+        transform: scale(1.05)
+
+    .aboutus-hover
+        transition: .3s
+        
+    
+    .aboutus-hover:hover
+        color: $blue-color
+        cursor: pointer
+        
+
+#aboutus-hero
+    color: #ddd
+    overflow: hidden
+
+    .jumbotron
+        position: relative
+        padding: 60px 0
+        
+        background-image: url(../img/footer.jpg)
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        transition: .3s
+        z-index: 0
+
+        h2
+            font-size: 32px
+
+        i
+            font-size: 35px
+        
+        p
+            font-size: 14px
+
+        img
+            height: 70%
+
+    .about-shadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, .6)
+        z-index: -10
+        top: 0
+        // margin-top: -66px
+
+    .aboutus-item
+        transition: .3s
+        h3
+            text-transform: none
+            margin: 10px 0
+    .aboutus-item:hover
+        transform: scale(1.05)
+
+// PORTFOLIO
+#portfolio
+    h2
+        text-align: center
+        text-transform: uppercase
+
+    .carousel-item
+        position: relative
+        height: 600px
+
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+    .carousel-caption
+        position: absolute
+        width: 100%
+        left: 0
+        right: 0
+        padding: 40px 0
+        background-color: rgba(0, 0, 0, .6)
+
+    .carousel-indicators
+        padding-bottom: 20px
+
+    // CENY
+#prices
+    .jumbotron
+        background-color: #f9f9f9
+
+    h2
+        text-align: center
+
+    h3
+        color: $blue-color
+        text-transform: uppercase
+    
+    .price-box
+        height: 80%
+        margin: 20px 10px
+        padding: 20px
+        background-color: #fff
+        box-shadow: 5px 5px 5px rgba(0,0,0, .6)
+        transition: transform .3s
+
+    .price-box:hover
+        transform: scale(1.05)
+
+    .btn
+        padding: 10px 20px
+        text-transform: uppercase
+
+// KONTAKT
+#contact
+    .jumbotron
+        background-image: url(../img/contact.jpg)
+        background-size: cover
+    h2
+        text-align: center        
+        color: #fff
+    h3
+        color: #fff
+    p
+        color: #fff
+
+    .permanent-makeups i:hover
+        background-color: rgba(0, 0, 0, .6)
+        border-radius: 50%
+
+    .contact-item
+        margin: 20px 30px
+    
+    .fb-icon
+        font-size: 5rem
+
+    .fb-icon-permanent
+        color: $blue-color
+        font-size: 5rem
+
+// FOOTER
+footer
+    background-color: #000000
+    color: #fff
+
+    p
+        padding: 20px
+        margin-bottom: 0
+        text-align: center
+        
+
+
+
+
+        
+        
+
+@media ( min-width: 375px )
+    nav
+    .collapse
+        .navbar-nav
+            .nav-link
+                padding-bottom: 0
+
+    #aboutus-hero
+        .jumbotron
+            h2
+                font-size: 36px
+
+            h3
+                font-size: 32px
+        
+            p
+                font-size: 14px
+        .aboutus-item
+            padding: 10px 10px
+
+    
+        
+@media ( min-width: 414px )
+    #aboutus-hero
+        .jumbotron
+            padding: 80px 0
+
+
+
+       

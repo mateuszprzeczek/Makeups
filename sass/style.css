@@ -1,0 +1,376 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("");
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #ff00d5;
+}
+
+.scroll-fix::before {
+  display: block;
+  margin-top: -66px;
+  height: 66px;
+  content: '';
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+}
+
+nav a, nav i {
+  color: #fff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #ff00d5;
+}
+
+nav a.nav-link.active {
+  color: #ff00d5;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .navbar-brand img {
+  height: 75px;
+  width: 75px;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  color: white;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/ola_makeups_header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 110%;
+  text-align: center;
+}
+
+header .hero-text p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+header .fa-angle-down {
+  display: none;
+}
+
+#aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+#aboutus h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#aboutus p {
+  font-size: 14px;
+}
+
+#aboutus .aboutus-img {
+  height: 70%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#aboutus .aboutus-img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#aboutus .aboutus-hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#aboutus .aboutus-hover:hover {
+  color: #ff00d5;
+  cursor: pointer;
+}
+
+#aboutus-hero {
+  color: #ddd;
+  overflow: hidden;
+}
+
+#aboutus-hero .jumbotron {
+  position: relative;
+  padding: 60px 0;
+  background-image: url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 0;
+}
+
+#aboutus-hero .jumbotron h2 {
+  font-size: 32px;
+}
+
+#aboutus-hero .jumbotron i {
+  font-size: 35px;
+}
+
+#aboutus-hero .jumbotron p {
+  font-size: 14px;
+}
+
+#aboutus-hero .jumbotron img {
+  height: 70%;
+}
+
+#aboutus-hero .about-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+  top: 0;
+}
+
+#aboutus-hero .aboutus-item {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#aboutus-hero .aboutus-item h3 {
+  text-transform: none;
+  margin: 10px 0;
+}
+
+#aboutus-hero .aboutus-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#portfolio h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#portfolio .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+#prices .jumbotron {
+  background-color: #f9f9f9;
+}
+
+#prices h2 {
+  text-align: center;
+}
+
+#prices h3 {
+  color: #ff00d5;
+  text-transform: uppercase;
+}
+
+#prices .price-box {
+  height: 80%;
+  margin: 20px 10px;
+  padding: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#prices .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#prices .btn {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#contact .jumbotron {
+  background-image: url(../img/contact.jpg);
+  background-size: cover;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #fff;
+}
+
+#contact h3 {
+  color: #fff;
+}
+
+#contact p {
+  color: #fff;
+}
+
+#contact .permanent-makeups i:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+#contact .contact-item {
+  margin: 20px 30px;
+}
+
+#contact .fb-icon {
+  font-size: 5rem;
+}
+
+#contact .fb-icon-permanent {
+  color: #ff00d5;
+  font-size: 5rem;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+}
+
+footer p {
+  padding: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  .collapse .navbar-nav .nav-link {
+    padding-bottom: 0;
+  }
+  #aboutus-hero .jumbotron h2 {
+    font-size: 36px;
+  }
+  #aboutus-hero .jumbotron h3 {
+    font-size: 32px;
+  }
+  #aboutus-hero .jumbotron p {
+    font-size: 14px;
+  }
+  #aboutus-hero .aboutus-item {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 414px) {
+  #aboutus-hero .jumbotron {
+    padding: 80px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
